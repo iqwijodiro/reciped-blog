@@ -1,0 +1,13 @@
+.health {
+	min-height: 70vh;
+	background-image: url(../../../assets/img/doctor.webp);
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: 65% 100%;
+	background-attachment: fixed;
+	display: flex;
+	align-items: center;
+	.card {
+		background-color: rgba($color: $gray-light, $alpha: 0.2);
+	}
+}

@@ -1,0 +1,32 @@
+/* Sponsors */
+
+.sponsors {
+	width: 100%;
+	background-color: $gray-light;
+	text-align: center;
+	padding: 20px 10px;
+	.sponsors__list {
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		.sponsor {
+			margin: 1em;
+			font-size: 1.3em;
+			color: $gray-mid;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			i {
+				margin-bottom: 15px;
+				font-size: 1.5em;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.sponsors__list {
+		flex-direction: column;
+	}
+}

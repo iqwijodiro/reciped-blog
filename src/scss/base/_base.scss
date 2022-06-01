@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.link {
+	font-size: 1.3em;
+}
+
+.marked {
+	//border-bottom: 0.1em solid $yellow;
+	color: $yellow;
+	background: linear-gradient(45deg, $yellow 0%, $green 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 0.2em;
+	background-position: 0 100%;
+	transition: all 0.25s ease-in;
+	-webkit-transition: all 0.25s ease-in;
+	-moz-transition: all 0.25s ease-in;
+	-ms-transition: all 0.25s ease-in;
+	-o-transition: all 0.25s ease-in;
+	&:hover {
+		background-size: 100% 88%;
+		color: #fff;
+	}
+}
+
+.container {
+	width: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
+}

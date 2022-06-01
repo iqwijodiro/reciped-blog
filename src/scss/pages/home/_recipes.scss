@@ -1,0 +1,37 @@
+/* recipes - section */
+
+.recipes {
+	min-height: 60vh;
+	// position: relative;
+	background-color: $yellow;
+	background-image: url(../../../assets/img/img1.webp);
+	background-repeat: no-repeat;
+	background-size: 45%;
+	background-position: 10% 50%;
+	display: flex;
+	align-items: center;
+	.container {
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		.card {
+			background-color: #fff;
+			h2 {
+				text-align: center;
+			}
+		}
+	}
+	img {
+		width: 50%;
+		margin: 0 -100px -100px 0;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.recipes {
+		flex-direction: column;
+		justify-content: center;
+		padding: 20px;
+		background-size: cover;
+	}
+}

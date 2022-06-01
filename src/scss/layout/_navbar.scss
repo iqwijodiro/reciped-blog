@@ -1,0 +1,89 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	padding: 1em 4em;
+	max-height: 100px;
+	background-color: rgba(255, 255, 255, 0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+
+	.header__brand {
+		text-transform: uppercase;
+		color: $green;
+		font-size: 2em;
+		font-weight: 400;
+		// font-family: 'Merienda One', cursive;
+	}
+	.header__brand--logo {
+		width: 60px;
+	}
+
+	.header__navigation {
+		flex: 1 1 50%;
+		max-width: 650px;
+		.list {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.link {
+			color: $green;
+			font-weight: 400;
+			position: relative;
+			&:hover {
+				color: #fff;
+				position: relative;
+				padding: 5px 0;
+				&::before {
+					transform: scaleX(1);
+					-webkit-transform: scaleX(1);
+					-moz-transform: scaleX(1);
+					-ms-transform: scaleX(1);
+					-o-transform: scaleX(1);
+					transform-origin: bottom left;
+				}
+			}
+			&::before {
+				content: ' ';
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				inset: 0 0 0 0;
+				background-color: $green;
+				z-index: -1;
+				transition: transform 0.2s ease;
+				-webkit-transition: transform 0.2s ease;
+				-moz-transition: transform 0.2s ease;
+				-ms-transition: transform 0.2s ease;
+				-o-transition: transform 0.2s ease;
+				transform: scaleX(0);
+				-webkit-transform: scaleX(0);
+				-moz-transform: scaleX(0);
+				-ms-transform: scaleX(0);
+				-o-transform: scaleX(0);
+				transform-origin: bottom right;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.header {
+		flex-direction: column;
+		max-height: 100%;
+	}
+	.header__navigation,
+	.header__navigation .list .list__item {
+		max-width: 100%;
+		margin-top: 15px;
+	}
+	.header__navigation .list {
+		display: none;
+		/* flex-direction: column; */
+	}
+}
