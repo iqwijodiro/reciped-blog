@@ -1,19 +1,19 @@
 /* Hero */
 .hero {
-	background-image: url('../../../assets/img/hero-food.webp');
-	background-size: cover;
-	background-position: center top;
-	background-attachment: fixed;
-	height: 100vh;
-	display: flex;
-	justify-content: start;
-	align-items: center;
-	.card {
-		background-color: rgba(255, 255, 255, 0.9);
-		animation: moveInBottom 2.5s ease;
-		-webkit-animation: moveInBottom 2.5s ease;
-	}
-	.hero__title {
-		text-align: center;
-	}
+  background-image: url(https://res.cloudinary.com/db0gjdwr0/image/upload/v1654709512/Portfolio_assets/reciped_site/hero-food_pqut52.webp);
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  .card {
+    background-color: rgba(255, 255, 255, 0.9);
+    animation: moveInBottom 2.5s ease;
+    -webkit-animation: moveInBottom 2.5s ease;
+  }
+  .hero__title {
+    text-align: center;
+  }
 }
