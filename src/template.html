@@ -1,134 +1,169 @@
 <!DOCTYPE html>
-<html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-			integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-		<title>Your Recipe Bank</title>
-	</head>
-	<body>
-		<header class="header">
-			<div class="header__brand">
-				<!-- src="./assets/img/logo_brand-green.jpg" -->
-				<img
-					src="./assets/img/logo_brand-green.jpg"
-					alt="Logo Reciped"
-					class="header__brand--logo"
-				/>
-				Reciped
-			</div>
-			<nav class="header__navigation">
-				<ul class="list">
-					<li class="list__item">
-						<a href="#" class="link">Home</a>
-					</li>
-					<li class="list__item">
-						<a href="#recipes" class="link">Recipes</a>
-					</li>
-					<li class="list__item">
-						<a href="#health" class="link health">Health</a>
-					</li>
-					<li class="list__item">
-						<a href="#" class="link">About Us</a>
-					</li>
-					<li class="list__item">
-						<a href="#" class="link">Help</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<!-- <input type="checkbox" id="burguer-menu" name="hamburguer" /> -->
-		<section class="hero">
-			<div class="container">
-				<div class="card">
-					<h1 class="hero__title">
-						If you can imaginate it, there's a
-						<span class="marked">recipe</span>
-					</h1>
-					<p class="card__text">
-						There is always a recipe to cook whatever we may dream of.
-					</p>
-					<div class="card__actions">
-						<a href="#" class="btn link">Recipes</a>
-						<a href="#" class="btn link">Watch Tutorial</a>
-					</div>
-				</div>
-			</div>
-			<!-- <div class="hero__bg"></div> -->
-		</section>
-		<section class="sponsors">
-			<h2 class="sponsors__title">Our sponsors</h2>
-			<div class="container">
-				<ul class="sponsors__list">
-					<li class="sponsor">
-						<i class="fas fa-utensils"></i>
-						Cook Masters
-					</li>
-					<li class="sponsor">
-						<i class="fas fa-hamburger"></i>
-						Today Food
-					</li>
-					<li class="sponsor">
-						<i class="fas fa-leaf"></i>
-						Vegan Fashion
-					</li>
-					<li class="sponsor">
-						<i class="fas fa-medal"></i>
-						Trending brands
-					</li>
-				</ul>
-			</div>
-		</section>
-		<section class="recipes" id="recipes">
-			<div class="container">
-				<div class="card">
-					<h2>
-						Pick your recipe from the very <span class="marked">best</span>
-					</h2>
-					<p class="card__text">
-						Choose from hundreds recipes selected of our coolest chefs database.
-					</p>
-					<div class="card__actions">
-						<a href="#" class="btn link">Explore All Recipes</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="health" id="health">
-			<div class="container">
-				<div class="card">
-					<h3>Partnered with</h3>
-					<h2>The <span class="marked">Healthy</span> Doctor</h2>
-					<p class="card__text">
-						We´ve partnered with a registered dietitian and gut health expert,
-						Dr Ann Doe, to share her studies and knowledge on improve our whole
-						wellbeing.
-					</p>
-					<div class="card__actions">
-						<a href="#" class="btn link">Improve your diet</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Pending work !! -->
-		<section id="plans" class="plans"></section>
-	</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <title>Your Recipe Bank</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header class="header">
+      <div class="header__brand">
+        <!-- src="./assets/img/logo_brand-green.jpg" -->
+        <img
+          src="https://res.cloudinary.com/db0gjdwr0/image/upload/v1654709515/Portfolio_assets/reciped_site/logo_brand-green2_b5l0oy.png"
+          alt="Logo Reciped"
+          class="header__brand--logo"
+        />
+        Reciped
+      </div>
+      <nav id="navigation" class="header__navigation">
+        <ul class="list">
+          <li class="list__item">
+            <a href="#" class="link">Home</a>
+          </li>
+          <li class="list__item">
+            <a href="#recipes" class="link">Recipes</a>
+          </li>
+          <li class="list__item">
+            <a href="#health" class="link">Health</a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="link">About Us</a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="link">Help</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav__drawer nav__drawer--green">
+        <div class="nav__drawer nav__drawer--yellow">
+          <div class="nav__drawer nav__drawer--white">
+            <div class="header__brand">
+              <img
+                src="https://res.cloudinary.com/db0gjdwr0/image/upload/v1654709515/Portfolio_assets/reciped_site/logo_brand-green2_b5l0oy.png"
+                alt="Logo Reciped"
+                class="header__brand--logo"
+              />
+              Reciped
+            </div>
+            <nav class="drawer__navigation">
+              <ul class="list">
+                <li class="list__item">
+                  <a href="#" class="link">Home</a>
+                </li>
+                <li class="list__item">
+                  <a href="#recipes" class="link">Recipes</a>
+                </li>
+                <li class="list__item">
+                  <a href="#health" class="link">Health</a>
+                </li>
+                <li class="list__item">
+                  <a href="#" class="link">About Us</a>
+                </li>
+                <li class="list__item">
+                  <a href="#" class="link">Help</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <button class="nav-btn open-btn"><i class="fas fa-bars"></i></button>
+      <button class="nav-btn close-btn">
+        <i class="fas fa-times"></i>
+      </button>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="card">
+          <h1 class="hero__title">
+            If you can imaginate it, there's a
+            <span class="marked">recipe</span>
+          </h1>
+          <p class="card__text">
+            There is always a recipe to cook whatever we may dream of.
+          </p>
+          <div class="card__actions">
+            <a href="#" class="btn link">Recipes</a>
+            <a href="#" class="btn link">Watch Tutorial</a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="hero__bg"></div> -->
+    </section>
+    <section class="sponsors">
+      <h2 class="sponsors__title">Our sponsors</h2>
+      <div class="container">
+        <ul class="sponsors__list">
+          <li class="sponsor">
+            <i class="fas fa-utensils"></i>
+            Cook Masters
+          </li>
+          <li class="sponsor">
+            <i class="fas fa-hamburger"></i>
+            Today Food
+          </li>
+          <li class="sponsor">
+            <i class="fas fa-leaf"></i>
+            Vegan Fashion
+          </li>
+          <li class="sponsor">
+            <i class="fas fa-medal"></i>
+            Trending brands
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="recipes lazy" id="recipes">
+      <div class="container">
+        <div class="card">
+          <h2>
+            Pick your recipe from the very <span class="marked">best</span>
+          </h2>
+          <p class="card__text">
+            Choose from hundreds recipes selected of our coolest chefs database.
+          </p>
+          <div class="card__actions">
+            <a href="#" class="btn link">Explore All Recipes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="health lazy" id="health">
+      <div class="container">
+        <div class="card">
+          <h3>Partnered with</h3>
+          <h2>The <span class="marked">Healthy</span> Doctor</h2>
+          <p class="card__text">
+            We´ve partnered with a registered dietitian and gut health expert,
+            Dr Ann Doe, to share her studies and knowledge on improve our whole
+            wellbeing.
+          </p>
+          <div class="card__actions">
+            <a href="#" class="btn link">Improve your diet</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pending work !! -->
+    <section id="plans" class="plans"></section>
+  </body>
 </html>

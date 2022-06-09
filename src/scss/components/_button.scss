@@ -1,37 +1,67 @@
 .btn {
-	background-color: $green;
-	color: #fff;
-	padding: 10px 30px;
-	margin: 0 20px;
-	border-radius: 30px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	-ms-border-radius: 30px;
-	-o-border-radius: 30px;
-	cursor: pointer;
-	position: relative;
-	transition: all 0.2s ease;
-	-webkit-transition: all 0.2s ease;
-	-moz-transition: all 0.2s ease;
-	-ms-transition: all 0.2s ease;
-	-o-transition: all 0.2s ease;
-	&:hover {
-		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-		background-color: #fff;
-		color: $green;
-		outline: 2px solid $green;
-		transform: translateY(-3px);
-		-webkit-transform: translateY(-3px);
-		-moz-transform: translateY(-3px);
-		-ms-transform: translateY(-3px);
-		-o-transform: translateY(-3px);
-	}
-	&:active {
-		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-		transform: translateY(-1px);
-		-webkit-transform: translateY(-1px);
-		-moz-transform: translateY(-1px);
-		-ms-transform: translateY(-1px);
-		-o-transform: translateY(-1px);
-	}
+  background-color: $green;
+  color: #fff;
+  padding: 10px 30px;
+  margin: 0 20px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    color: $green;
+    outline: 2px solid $green;
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+  }
+  &:active {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+    -moz-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+    -o-transform: translateY(-1px);
+  }
+}
+
+.nav-btn,
+.close-btn {
+  display: none;
+}
+
+@include respond(tab-port) {
+  .nav-btn {
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: 2.5em;
+    color: $gray-mid;
+  }
+
+  .open-btn {
+    position: fixed;
+    top: 25px;
+    right: 50px;
+  }
+
+  .close-btn {
+    opacity: 0.3;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    font-size: 2.5em;
+    color: $gray-mid;
+  }
 }

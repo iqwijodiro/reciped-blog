@@ -1,13 +1,13 @@
 .health {
-	min-height: 70vh;
-	background-image: url(../../../assets/img/doctor.webp);
-	background-repeat: no-repeat;
-	background-size: 60%;
-	background-position: 65% 100%;
-	background-attachment: fixed;
-	display: flex;
-	align-items: center;
-	.card {
-		background-color: rgba($color: $gray-light, $alpha: 0.2);
-	}
+  min-height: 70vh;
+  background-image: url(https://res.cloudinary.com/db0gjdwr0/image/upload/v1654709512/Portfolio_assets/reciped_site/doctor_srsxyg.webp);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 65% 100%;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  .card {
+    background-color: rgba($color: $gray-light, $alpha: 0.2);
+  }
 }

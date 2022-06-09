@@ -1,35 +1,39 @@
 body {
-	font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 ul {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 a,
 a:active,
 a:visited {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 p {
-	font-size: 1.2em;
-	color: $gray-mid;
-	line-height: 1.8;
-	font-weight: 300;
+  font-size: 2em;
+  color: $gray-mid;
+  line-height: 1.8;
+  font-weight: 300;
 }
 
 h1 {
-	font-size: 3em;
-	color: $green;
+  font-size: 4.8em;
+  color: $green;
 }
 h2,
 h3,
 h4 {
-	color: $gray-mid;
-	margin-top: 15px;
+  color: $gray-mid;
+  margin-top: 15px;
 }
 
 h2 {
-	font-size: 2em;
+  font-size: 3.2em;
+}
+
+h3 {
+  font-size: 2em;
 }
