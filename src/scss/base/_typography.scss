@@ -1,5 +1,5 @@
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 ul {
@@ -36,4 +36,13 @@ h2 {
 
 h3 {
   font-size: 2em;
+}
+
+@include respond(tab-port) {
+  h1 {
+    font-size: 3.3em;
+  }
+  p {
+    font-size: 1.9em;
+  }
 }

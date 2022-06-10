@@ -2,36 +2,45 @@
 
 .recipes {
   min-height: 60vh;
-  // position: relative;
   background-color: $yellow;
-  background-image: url(https://res.cloudinary.com/db0gjdwr0/image/upload/v1654709514/Portfolio_assets/reciped_site/img1_vapndi.webp);
-  background-repeat: no-repeat;
-  background-size: 45%;
-  background-position: 10% 50%;
   display: flex;
   align-items: center;
   .container {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     .card {
       background-color: #fff;
+      max-width: 600px;
       h2 {
         text-align: center;
       }
     }
-  }
-  img {
-    width: 50%;
-    margin: 0 -100px -100px 0;
+    .recipes__img {
+      max-width: 600px;
+      // margin: 0 -30px;
+    }
   }
 }
 
-@media screen and (max-width: 800px) {
-  .recipes {
+@include respond(tab-port) {
+  .container {
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    background-size: cover;
+    .recipes__img {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}
+@include respond(tab-land) {
+  .container {
+    justify-content: center;
+    padding: 20px;
+    .recipes__img {
+      width: 60%;
+      margin: 0;
+    }
   }
 }
